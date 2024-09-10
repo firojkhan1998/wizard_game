@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 import os
 
+
 # Define a function to generate the report
 def generate_report(status, details):
     report_path = 'Product_order_report.html'
@@ -14,6 +15,7 @@ def generate_report(status, details):
         report_file.write(f'<p>Status: {status}</p>')
         report_file.write(f'<p>Details: {details}</p>')
         report_file.write('</body></html>')
+
 
 # Set up the Chrome WebDriver
 chrome_options = Options()
